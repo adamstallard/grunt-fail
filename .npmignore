@@ -1,0 +1,7 @@
+test
+\.idea
+\.hgignore
+\.gitignore
+\.hg
+Gruntfile.js
+\.travis.yml

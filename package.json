@@ -1,0 +1,46 @@
+{
+  "name" : "grunt-fail",
+  "version" : "0.1.0",
+  "description" :
+    "Cause grunt to stop execution with an error message and return code of choice, preventing subsequent tasks from running.",
+  "keywords" :
+    ["test", "testing", "task", "gruntplugin", "grunt", "deployment", "build", "fail", "error"],
+  "author" : {
+    "name" : "Adam Stallard",
+    "email" : "adam@goalzen.org",
+    "url" : "goalzen.org"
+  },
+  "directories" : {
+    "test" : "test"
+  },
+  "dependencies" : {
+  },
+  "peerDependencies" : {
+    "grunt" : "~0.4"
+  },
+  "devDependencies" : {
+    "grunt" : "~0.4",
+    "grunt-vows-runner" : "*",
+    "grunt-contrib-jshint" : "*",
+    "vows" : "*",
+    "chai" : "*"
+  },
+  "license" : {
+    "type" : "MIT",
+    "url" : "https://github.com/goalzen/grunt-fail/blob/master/LICENSE-MIT"
+  },
+  "engines" : {
+    "node" : ">=0.8.19"
+  },
+  "scripts" : {
+    "test" : "grunt"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/goalzen/grunt-fail.git"
+  },
+  "bugs" : {
+    "url" : "https://github.com/goalzen/grunt-fail/issues"
+},
+  "homepage" : "https://github.com/goalzen/grunt-fail.git"
+}
