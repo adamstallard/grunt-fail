@@ -45,7 +45,7 @@ You can use it in an alias task like this
 Grunt seems to do best across platforms with exit codes between 1 and 255 inclusive.  Negative numbers might work,
 but it adds them to 256 to make them positive on some platforms.
 
-Grunt doesn't consider a return code of zero an error, so it won't fail.  Don't use it!
+Grunt doesn't consider an exit code of zero an error, so it won't fail.  Don't use it!
 
 [Here are the exit codes used by grunt for reference](http://gruntjs.com/api/exit-codes)
 
