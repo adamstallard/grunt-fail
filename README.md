@@ -47,7 +47,7 @@ but it adds them to 256 to make them positive on some platforms.
 
 Grunt doesn't consider an exit code of zero an error, so it won't fail.  Don't use it!
 
-[Here are the exit codes used by grunt for reference](http://gruntjs.com/api/exit-codes)
+[Here are the exit codes used by grunt for reference.](http://gruntjs.com/api/exit-codes)
 
 ###Bugs, etc.
 
