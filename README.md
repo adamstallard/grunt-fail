@@ -1,5 +1,7 @@
 ##grunt-fail
 
+[![Build Status](https://travis-ci.org/goalzen/grunt-fail.png?branch=master)](https://travis-ci.org/goalzen/grunt-fail)
+
 Stop grunt execution with an error message and return code of choice.
 
 ###Installation
