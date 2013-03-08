@@ -43,4 +43,4 @@ Grunt doesn't consider zero an error, so it won't fail.  Don't use it!
 
 ###Bugs, etc.
 
-Please report any bugs, feature requests, etc. to [grunt-fails's github issue tracker](https://github.com/goalzen/grunt-fail/issues).
+Please report any bugs, feature requests, etc. to [grunt-fail's github issue tracker](https://github.com/goalzen/grunt-fail/issues).
