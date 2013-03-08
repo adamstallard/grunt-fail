@@ -24,17 +24,20 @@ vows.describe('grunt').addBatch({
       grunt.verbose.error(error);
       grunt.verbose.error().errorlns(stdout);
       expect(stdout).to.have.string('error: awesome');
+    },
+    "should have an error code of 255" : function(error){
+      expect(error).to.have.property('code', 255);
     }
   },
-  "grunt fail:awesome:25" : {
+  "grunt fail:awesome:-25" : {
     topic : function(){
-      exec('grunt --verbose fail:awesome:25', this.callback);
+      exec('grunt --verbose fail:awesome:-25', this.callback);
     },
     "should have an error message of 'awesome'" : function(error, stdout){
       expect(stdout).to.have.string('error: awesome');
     },
-    "should have an error code of 25" : function(error){
-      expect(error).to.have.property('code', 25);
+    "should have an error code of -25" : function(error){
+      expect(error).to.have.property('code', -25);
     }
   },
   "grunt fail" : {
@@ -46,8 +49,8 @@ vows.describe('grunt').addBatch({
       grunt.verbose.error().errorlns(stdout);
       expect(stdout).to.have.string('error: Failed on purpose');
     },
-    "should have an error code of -1" : function(error){
-      expect(error).to.have.property('code', -1);
+    "should have an error code of 255" : function(error){
+      expect(error).to.have.property('code', 255);
     }
   }
 }).export(module, {error: false});

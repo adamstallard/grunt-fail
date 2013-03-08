@@ -5,7 +5,7 @@ module.exports = function(grunt){
     grunt.verbose.subhead('fail:arguments');
     grunt.verbose.writeflags(arguments);
     var message = 'Failed on purpose.';
-    var code = -1;
+    var code = 255;
     if (isNaN(arguments[0])) {
       if (arguments.length) {
         message = arguments[0];

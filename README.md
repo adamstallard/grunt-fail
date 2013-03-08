@@ -29,7 +29,7 @@ If there is just one argument, it can be either a numerical return code, or an e
 
 The default message is "Failed on purpose."
 
-The default return code is -1.
+The default return code is 255.
 
 More examples
 
