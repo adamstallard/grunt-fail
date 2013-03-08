@@ -1,6 +1,6 @@
 ##grunt-fail
 
-Cause grunt to stop execution with an error message and return code of choice, preventing subsequent tasks from running.
+Stop grunt execution with an error message and return code of choice.
 
 ###Installation
 
@@ -39,7 +39,7 @@ You can use it in an alias task like this
     task('test', ['vows', 'fail:99']);
 
 ###Don't set the error code to zero
-Grunt doesn't consider zero an error, so it won't fail.  Don't do it!
+Grunt doesn't consider zero an error, so it won't fail.  Don't use it!
 
 ###Bugs, etc.
 

@@ -1,8 +1,8 @@
 {
   "name" : "grunt-fail",
-  "version" : "0.1.0",
+  "version" : "0.1.1",
   "description" :
-    "Cause grunt to stop execution with an error message and return code of choice, preventing subsequent tasks from running.",
+    "Stop grunt execution with an error message and return code of choice",
   "keywords" :
     ["test", "testing", "task", "gruntplugin", "grunt", "deployment", "build", "fail", "error"],
   "author" : {
