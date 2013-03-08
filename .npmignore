@@ -5,3 +5,4 @@ test
 \.hg
 Gruntfile.js
 \.travis.yml
+\.jshintrc
