@@ -29,15 +29,15 @@ vows.describe('grunt').addBatch({
       expect(error).to.have.property('code', 255);
     }
   },
-  "grunt fail:awesome:-25" : {
+  "grunt fail:awesome:43" : {
     topic : function(){
-      exec('grunt --verbose fail:awesome:-25', this.callback);
+      exec('grunt --verbose fail:awesome:43', this.callback);
     },
     "should have an error message of 'awesome'" : function(error, stdout){
       expect(stdout).to.have.string('error: awesome');
     },
-    "should have an error code of -25" : function(error){
-      expect(error).to.have.property('code', -25);
+    "should have an error code of 43" : function(error){
+      expect(error).to.have.property('code', 43);
     }
   },
   "grunt fail" : {

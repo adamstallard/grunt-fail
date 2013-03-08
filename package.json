@@ -1,10 +1,10 @@
 {
   "name" : "grunt-fail",
-  "version" : "0.2.0",
+  "version" : "0.3.0",
   "description" :
-    "Stop grunt execution with an error message and return code of choice",
+    "Stop grunt execution with an error message and code of choice",
   "keywords" :
-    ["test", "testing", "task", "gruntplugin", "grunt", "deployment", "build", "fail", "error"],
+    ["test", "testing", "task", "gruntplugin", "grunt", "deployment", "build", "fail", "error", "return"],
   "author" : {
     "name" : "Adam Stallard",
     "email" : "adam@goalzen.org",

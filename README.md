@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/goalzen/grunt-fail.png?branch=master)](https://travis-ci.org/goalzen/grunt-fail)
 
-Stop grunt execution with an error message and return code of choice.
+Stop grunt execution with an error message and code of choice.
 
 ###Installation
 
@@ -23,7 +23,7 @@ The ``fail`` task is now available; for example
 
 For example
 
-    grunt "fail:Don't deploy:-26"
+    grunt "fail:Don't deploy:26"
 
 If there is just one argument, it can be either a numerical return code, or an error message.
 
@@ -33,15 +33,21 @@ The default return code is 255.
 
 More examples
 
-    grunt fail:-6
+    grunt fail:6
     grunt "fail:no thanks"
 
 You can use it in an alias task like this
 
     task('test', ['vows', 'fail:99']);
 
-###Don't set the error code to zero
-Grunt doesn't consider zero an error, so it won't fail.  Don't use it!
+###Allowed return codes
+
+Grunt seems to do best across platforms with error codes between 1 and 255 inclusive.  Negative numbers might work,
+but it adds them to 256 to make them positive on some platforms.
+
+Grunt doesn't consider a return code of zero an error, so it won't fail.  Don't use it!
+
+[Here are the exit codes used by grunt for reference](http://gruntjs.com/api/exit-codes)
 
 ###Bugs, etc.
 
