@@ -44,7 +44,7 @@ vows.describe('grunt').addBatch({
     topic : function(){
       exec('grunt --verbose fail', this.callback);
     },
-    "should have an error message of 'Failed on purpose.'" : function(error, stdout){
+    "should have an error message of 'Failed on purpose'" : function(error, stdout){
       grunt.verbose.error(error);
       grunt.verbose.error().errorlns(stdout);
       expect(stdout).to.have.string('error: Failed on purpose');
