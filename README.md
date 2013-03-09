@@ -40,7 +40,7 @@ You can use it in an alias task like this
 
     task('test', ['vows', 'fail:99']);
 
-###Allowed exit codes
+###Exit codes
 
 Grunt seems to do best across platforms with exit codes between 1 and 255 inclusive.  Negative numbers might work,
 but it adds them to 256 to make them positive on some platforms.
