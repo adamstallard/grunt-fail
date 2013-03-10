@@ -2,7 +2,7 @@
 
 module.exports = function(grunt) {
 
-  // Project configuration
+  // project configuration
   grunt.initConfig({
     jshint: {
       all : {
@@ -25,15 +25,16 @@ module.exports = function(grunt) {
     }
   });
 
-  // Load local tasks
+  // local tasks
   grunt.loadTasks('tasks');
 
-  // Load npm tasks
+  // npm tasks
   grunt.loadNpmTasks('grunt-vows-runner');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  // Default task
-  // Don't use jshint by default until they fix the requirement for a radix parameter for parseInt
+  // default task
   grunt.registerTask('default', ['vows']);
+
+  // Don't use jshint by default until they fix the requirement for a radix parameter for parseInt
 
 };
