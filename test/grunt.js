@@ -8,7 +8,7 @@ var grunt = require('grunt');
 vows.describe('grunt').addBatch({
   "grunt fail:25" : {
     topic : function(){
-      exec('grunt --verbose fail:25', this.callback);
+      exec('grunt --verbose --no-color fail:25', this.callback);
     },
     "should have an error code of 25" : function(error, stdout){
       grunt.verbose.error(error);
@@ -18,7 +18,7 @@ vows.describe('grunt').addBatch({
   },
   "grunt fail:awesome" : {
     topic : function(){
-      exec('grunt --verbose fail:awesome', this.callback);
+      exec('grunt --verbose --no-color fail:awesome', this.callback);
     },
     "should have an error message of 'awesome'" : function(error, stdout){
       grunt.verbose.error(error);
@@ -31,7 +31,7 @@ vows.describe('grunt').addBatch({
   },
   "grunt fail:awesome:43" : {
     topic : function(){
-      exec('grunt --verbose fail:awesome:43', this.callback);
+      exec('grunt --verbose --no-color fail:awesome:43', this.callback);
     },
     "should have an error message of 'awesome'" : function(error, stdout){
       expect(stdout).to.have.string('error: awesome');
@@ -42,7 +42,7 @@ vows.describe('grunt').addBatch({
   },
   "grunt fail" : {
     topic : function(){
-      exec('grunt --verbose fail', this.callback);
+      exec('grunt --verbose --no-color fail', this.callback);
     },
     "should have an error message of 'Failed on purpose'" : function(error, stdout){
       grunt.verbose.error(error);
