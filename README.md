@@ -7,17 +7,22 @@ Stop grunt execution with an error message and exit code of choice.
 ###Installation
 
 1. Change directories to the root directory of your project
-2. ``npm install grunt``
-3. ``npm install grunt-fail``
-4. Add the following line to your ``Gruntfile.js``
+2. ``npm install grunt-fail``
+3. Add the following line to your ``Gruntfile.js``
    
    ``grunt.loadNpmTasks('grunt-fail');``
 
-The ``fail`` task is now available; for example
+###Usage
+
+The simplest usage is without any arguments, e.g.
 
     grunt fail
 
-###Usage
+from the command line
+
+or
+
+
 
 ``grunt-fail`` takes an optional error message and an optional exit code as arguments.
 
