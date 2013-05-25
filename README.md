@@ -22,6 +22,11 @@ from the command line
 
 or
 
+```javascript
+grunt.registerTask('default', ['fail']);
+```
+
+from within your Gruntfile.
 
 
 ``grunt-fail`` takes an optional error message and an optional exit code as arguments.
@@ -36,19 +41,19 @@ The default message is "Failed on purpose."
 
 The default exit code is 255.
 
-More examples
+More examples:
 
-    grunt fail:6
+(command line)
+
     grunt "fail:no thanks"
 
-You can use it in an alias task like this
+Gruntfile
 
-    task('test', ['vows', 'fail:99']);
+    grunt.registerTask('test', ['vows', 'fail:99']);
 
 ###Exit codes
 
-Grunt seems to do best across platforms with exit codes between 1 and 255 inclusive.  Negative numbers might work,
-but it adds them to 256 to make them positive on some platforms.
+Exit codes between 1 and 255 work well on all systems.  Other codes may not work as expected.
 
 Grunt doesn't consider an exit code of zero an error, so it won't fail.  Don't use it!
 
