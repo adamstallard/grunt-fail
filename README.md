@@ -16,18 +16,17 @@ Stop grunt execution with an error message and exit code of choice.
 
 The simplest usage is without any arguments, e.g.
 
+__from the command line__
+
     grunt fail
 
-from the command line
-
-or
+__from within a Gruntfile__
 
 ```javascript
 grunt.registerTask('default', ['fail']);
 ```
 
-from within your Gruntfile.
-
+####Arguments
 
 ``grunt-fail`` takes an optional error message and an optional exit code as arguments.
 
@@ -41,13 +40,13 @@ The default message is "Failed on purpose."
 
 The default exit code is 255.
 
-More examples:
+####More examples
 
-(command line)
+__command line__
 
     grunt "fail:no thanks"
 
-Gruntfile
+__Gruntfile__
 
     grunt.registerTask('test', ['vows', 'fail:99']);
 
