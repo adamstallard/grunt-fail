@@ -10,7 +10,9 @@ Stop grunt execution with an error message and exit code of choice.
 2. ``npm install grunt-fail``
 3. Add the following line to your ``Gruntfile.js``
    
-   ``grunt.loadNpmTasks('grunt-fail');``
+```javascript
+grunt.loadNpmTasks('grunt-fail');``
+```
 
 ###Usage
 
@@ -18,7 +20,9 @@ The simplest usage is without any arguments, e.g.
 
 __from the command line__
 
-    grunt fail
+```bash
+grunt fail
+```
 
 __from within a Gruntfile__
 
@@ -32,7 +36,9 @@ grunt.registerTask('default', ['fail']);
 
 For example
 
-    grunt "fail:Don't deploy:26"
+```bash
+grunt "fail:Don't deploy:26"
+```
 
 If there is just one argument, it can be either a numerical exit code, or an error message.
 
@@ -44,11 +50,15 @@ The default exit code is 255.
 
 __command line__
 
-    grunt "fail:no thanks"
+```bash
+grunt "fail:no thanks"
+```
 
 __Gruntfile__
 
-    grunt.registerTask('test', ['vows', 'fail:99']);
+```javascript
+grunt.registerTask('test', ['vows', 'fail:99']);
+```
 
 ###Exit codes
 
