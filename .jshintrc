@@ -7,7 +7,6 @@
   "sub" : true,
   "undef" : true,
   "node" : true,
-  "es5" : true,
   "strict" : true,
   "camelcase" : true,
   "nonew" : true,
