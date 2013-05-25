@@ -11,7 +11,7 @@ Stop grunt execution with an error message and exit code of choice.
 3. Add the following line to your ``Gruntfile.js``
    
 ```javascript
-grunt.loadNpmTasks('grunt-fail');``
+grunt.loadNpmTasks('grunt-fail');
 ```
 
 ###Usage
