@@ -1,44 +1,54 @@
 {
-  "name" : "grunt-fail",
-  "version" : "0.3.2",
-  "description" :
-    "Stop grunt execution with an error message and exit code of choice.",
-  "keywords" :
-    ["test", "testing", "task", "gruntplugin", "grunt", "deployment", "build", "fail", "error", "return", "exit", "deploy"],
-  "author" : {
-    "name" : "Adam Stallard",
-    "email" : "adam@goalzen.org",
-    "url" : "goalzen.org"
+  "name": "grunt-fail",
+  "version": "0.3.2",
+  "description": "Stop grunt execution with an error message and exit code of choice.",
+  "keywords": [
+    "test",
+    "testing",
+    "task",
+    "gruntplugin",
+    "grunt",
+    "deployment",
+    "build",
+    "fail",
+    "error",
+    "return",
+    "exit",
+    "deploy"
+  ],
+  "author": {
+    "name": "Adam Stallard",
+    "email": "adam@goalzen.org",
+    "url": "goalzen.org"
   },
-  "directories" : {
-    "test" : "test"
+  "directories": {
+    "test": "test"
   },
-  "dependencies" : {
+  "dependencies": {},
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
   },
-  "peerDependencies" : {
-    "grunt" : "~0.4"
+  "devDependencies": {
+    "grunt-vows-runner": "*",
+    "grunt-contrib-jshint": "*",
+    "chai": "*"
   },
-  "devDependencies" : {
-    "grunt-vows-runner" : "*",
-    "grunt-contrib-jshint" : "*",
-    "chai" : "*"
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/goalzen/grunt-fail/blob/master/LICENSE-MIT"
   },
-  "license" : {
-    "type" : "MIT",
-    "url" : "https://github.com/goalzen/grunt-fail/blob/master/LICENSE-MIT"
+  "engines": {
+    "node": ">=0.8.19"
   },
-  "engines" : {
-    "node" : ">=0.8.19"
+  "scripts": {
+    "test": "grunt"
   },
-  "scripts" : {
-    "test" : "grunt"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goalzen/grunt-fail.git"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/goalzen/grunt-fail.git"
+  "bugs": {
+    "url": "https://github.com/goalzen/grunt-fail/issues"
   },
-  "bugs" : {
-    "url" : "https://github.com/goalzen/grunt-fail/issues"
-},
-  "homepage" : "https://github.com/goalzen/grunt-fail.git"
+  "homepage": "https://github.com/goalzen/grunt-fail.git"
 }
